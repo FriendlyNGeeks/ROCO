@@ -23,8 +23,8 @@
   <a href="https://discord.gg/eNKquhG" target="_blank"><img
   alt="Discord chat"
   src="https://img.shields.io/discord/324774009847808000?color=%235865f2&label=Discord&style=flat"></a>
-  <a href="https://github.com/FriendlyNGeeks/ROCO/archive/refs/tags/roco.zip" target="_blank"><img
-  alt="Download PIVAC"
+  <a href="https://github.com/FriendlyNGeeks/ROCO/releases/download/roco/ROCO.zip" target="_blank"><img
+  alt="Download ROCO"
   src="https://img.shields.io/badge/Download-pivac.zip-orange"></a>
  <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank"><img
   alt="Awesome"
@@ -61,7 +61,7 @@ Inspired from the [octoprint-stream-overlay](https://github.com/daschu117/octopr
 
 1. SSH into octoprint host
 2. cd /oprint/lib/pythonX.X/site-packages/octoprint/static
-3. wget https://github.com/FriendlyNGeeks/ROCO/archive/refs/tags/roco.zip
+3. wget https://github.com/FriendlyNGeeks/ROCO/releases/download/roco/ROCO.zip
 4. unpack zip
 5. Web-browser to https://$OCTOPRINT/static/index.html?baseurl=https://$OCTOPRINT/&apikey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx to verify that it works.
 3. Add the above URL to a Browser source in OBS Studio. Make sure to set the browser size to 1920x1080.
