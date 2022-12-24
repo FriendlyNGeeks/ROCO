@@ -25,7 +25,7 @@
   src="https://img.shields.io/discord/324774009847808000?color=%235865f2&label=Discord&style=flat"></a>
   <a href="https://github.com/FriendlyNGeeks/ROCO/releases/download/roco/ROCO.zip" target="_blank"><img
   alt="Download ROCO"
-  src="https://img.shields.io/badge/Download-pivac.zip-orange"></a>
+  src="https://img.shields.io/badge/Download-roco.zip-orange"></a>
  <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank"><img
   alt="Awesome"
   src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"></a>
