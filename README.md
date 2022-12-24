@@ -103,7 +103,7 @@ This html can be deployed directly from octoprint or local computer. Thumbnail m
 This overlay was written to be exactly 1920x1080 canvas size in OBS Studio. 
 
 The camera feed is explicitly 4:3 for the taller FOV mode of the Raspberry Pi Cam V2.
-I'm running my raspi cam V2 at 720x480 30FPS, which has the full FOV of the sensor.
+I'm running my raspi cam fV2 at 720x480 30FPS, which has the full FOV of the sensor.
 The camera image is scaled to 1440px wide, which results in some of the vertical image being scaled past the viewport.
 https://picamera.readthedocs.io/en/release-1.12/fov.html
 
