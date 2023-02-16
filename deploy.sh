@@ -14,12 +14,13 @@ unpackDeploy() {
     if test -f "$FILE"; then
         echo "$FILE exists."
         sudo rm ROCO.zip && echo "Duplicate Zip has been removed" || error "Could not remove the Zip"
+    else
+        # Download new zip and unpack
+        sudo wget https://github.com/FriendlyNGeeks/ROCO/releases/download/roco/ROCO.zip && echo "Source Code Zip has been downloaded" || error "Could not download Source Code zip"
+        sudo unzip ROCO.zip && echo "Zip has been unpacked" || error "Could not unpack the Zip directory"
+        sudo rm ROCO.zip && echo "Original Zip has been deleted" || error "Could not remove the Zip"
+        closingRemarks
     fi
-    # Download new zip and unpack
-    sudo wget https://github.com/FriendlyNGeeks/ROCO/releases/download/roco/ROCO.zip && echo "Source Code Zip has been downloaded" || error "Could not download Source Code zip"
-    sudo unzip ROCO.zip && echo "Zip has been unpacked" || error "Could not unpack the Zip directory"
-    sudo rm ROCO.zip && echo "Original Zip has been deleted" || error "Could not remove the Zip"
-    closingRemarks
 }
 
 switch2OctoprintStatic() {
