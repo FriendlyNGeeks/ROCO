@@ -59,10 +59,15 @@ Inspired from the [octoprint-stream-overlay](https://github.com/daschu117/octopr
 
 ## Installation
 
+### Advance
+1. SSH into octoprint host
+2. curl -s https://raw.githubusercontent.com/FriendlyNGeeks/ROCO/main/deploy.sh | bash
+
+### Basic
 1. SSH into octoprint host
 2. cd /oprint/lib/pythonX.X/site-packages/octoprint/static
 3. wget https://github.com/FriendlyNGeeks/ROCO/archive/refs/tags/roco.zip
-4. unpack zip
+4. unzip roco.zip
 5. Web-browser to https://$OCTOPRINT/static/index.html?baseurl=https://$OCTOPRINT/&apikey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx to verify that it works.
 3. Add the above URL to a Browser source in OBS Studio. Make sure to set the browser size to 1920x1080.
 4. If you're not using a valid certificate with HTTPS, you might need to change the URL scheme to HTTP.
