@@ -13,7 +13,7 @@ unpackDeploy() {
     FILE=$HOME/oprint/lib/$currentPythonVer/site-packages/octoprint/static/ROCO.zip
     if test -f "$FILE"; then
         echo "$FILE exists."
-        sudo rm roco.zip && echo "Duplicate Zip has been removed" || error "Could not remove the Zip"
+        sudo rm ROCO.zip && echo "Duplicate Zip has been removed" || error "Could not remove the Zip"
     fi
     # Download new zip and unpack
     sudo wget https://github.com/FriendlyNGeeks/ROCO/releases/download/roco/ROCO.zip && echo "Source Code Zip has been downloaded" || error "Could not download Source Code zip"
