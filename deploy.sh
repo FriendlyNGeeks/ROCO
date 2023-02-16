@@ -16,7 +16,7 @@ unpackDeploy() {
         sudo rm roco.zip && echo "Duplicate Zip has been removed" || error "Could not remove the Zip"
     fi
     # Download new zip and unpack
-    sudo wget https://github.com/FriendlyNGeeks/ROCO/archive/refs/tags/roco.zip && echo "Source Code Zip has been downloaded" || error "Could not download Source Code zip"
+    sudo wget https://github.com/FriendlyNGeeks/ROCO/releases/download/roco/ROCO.zip && echo "Source Code Zip has been downloaded" || error "Could not download Source Code zip"
     sudo unzip -j roco.zip && echo "Zip has been unpacked" || error "Could not unpack the Zip directory"
     sudo rm roco.zip && echo "Original Zip has been deleted" || error "Could not remove the Zip"
     closingRemarks
