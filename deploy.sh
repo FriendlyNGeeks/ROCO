@@ -17,13 +17,14 @@ unpackDeploy() {
     fi
     # Download new zip and unpack
     sudo wget https://github.com/FriendlyNGeeks/ROCO/archive/refs/tags/roco.zip && echo "Source Code Zip has been downloaded" || error "Could not download Source Code zip"
-    unzip roco.zip && echo "Zip has been unpacked" || error "Could not unpack the Zip directory"
+    sudo unzip roco.zip && echo "Zip has been unpacked" || error "Could not unpack the Zip directory"
     sudo rm roco.zip && echo "Original Zip has been deleted" || error "Could not remove the Zip"
     closingRemarks
 }
 
 switch2OctoprintStatic() {
     # Fetch octoprint current python diretory
+    cd $HOME/oprint/lib/
     currentPythonVer="$( bash <<EOF
     ls
 EOF
